@@ -1,0 +1,1147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Design Spark | Web Design, Branding & Digital Marketing</title>
+    <meta
+      name="description"
+      content="Creative web design, development, SEO and branding studio in Jacksonville, FL."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="progress"></div>
+    <div class="cur"><span></span></div>
+
+    <svg width="0" height="0" style="position: absolute">
+      <symbol id="sp" viewBox="0 0 24 24">
+        <path
+          d="M12 0c1 7 5 11 12 12-7 1-11 5-12 12-1-7-5-11-12-12 7-1 11-5 12-12z"
+        />
+      </symbol>
+    </svg>
+
+    <!-- Navbar -->
+    <header class="nav" id="nav">
+      <a href="#home" class="brand">
+        <img
+          src="assets/images/logo.png"
+          alt="Logo"
+          class="nav-logo"
+          onerror="this.style.display = 'none'"
+        />
+      </a>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About us</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#services">Services</a>
+        <a href="#packages">Packages</a>
+      </nav>
+      <a href="#contact" class="btn sm"><span>Contact now</span></a>
+      <button class="burger" id="burger" aria-label="Menu">
+        <i></i><i></i>
+      </button>
+    </header>
+
+    <div class="menu" id="menu">
+      <a href="#home">Home</a>
+      <a href="#about">About us</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#services">Services</a>
+      <a href="#packages">Packages</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="dark hero-new" id="home">
+      <div class="hero-bg-wrapper">
+        <div
+          class="hero-bg-img"
+          style="background-image: url(&quot;assets/images/hero-bg.jpg&quot;)"
+        ></div>
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="wrap hero-new-grid">
+        <div class="hero-copy-new">
+          <h1 aria-label="Think outside the box">
+            <span class="line">Think Outside</span>
+            <span class="line g-text">The Box</span>
+          </h1>
+          <p>
+            Crafting stunning designs, seamless development, and impactful
+            marketing strategies to help your business thrive in the digital
+            age.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#contact" class="btn solid">Get Started</a>
+            <a href="#portfolio" class="btn glass-btn"
+              ><span>See our work</span></a
+            >
+          </div>
+        </div>
+
+        <div class="hero-side-card glass-panel">
+          <div class="card-img-wrap">
+            <img
+              class="slide-img active"
+              src="assets/images/portfolio-1.jpg"
+              alt="Work 1"
+              onerror="this.remove()"
+            />
+            <img
+              class="slide-img"
+              src="assets/images/portfolio-2.jpg"
+              alt="Work 2"
+              onerror="this.remove()"
+            />
+            <img
+              class="slide-img"
+              src="assets/images/portfolio-3.jpg"
+              alt="Work 3"
+              onerror="this.remove()"
+            />
+          </div>
+          <div class="card-info">
+            <span class="idx" id="slide-idx">01 / 03</span>
+            <div class="progress-bar"><span id="slide-progress"></span></div>
+          </div>
+          <div class="card-footer">
+            <h4>Featured Work</h4>
+            <p>Explore our latest web design projects.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap hero-bottom-bar">
+        <div class="avatars">
+          <div class="av-group">
+            <img src="https://i.pravatar.cc/100?img=1" alt="Client" />
+            <img src="https://i.pravatar.cc/100?img=2" alt="Client" />
+            <img src="https://i.pravatar.cc/100?img=3" alt="Client" />
+            <img src="https://i.pravatar.cc/100?img=4" alt="Client" />
+          </div>
+          <span>10K+ Happy Clients</span>
+        </div>
+
+        <div class="rotating-badge">
+          <svg viewBox="0 0 100 100">
+            <path
+              id="circlePath"
+              d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
+              fill="transparent"
+            />
+            <text>
+              <textPath href="#circlePath">
+                • Explore more • Discover • Create
+              </textPath>
+            </text>
+          </svg>
+          <svg class="sp mid"><use href="#sp" /></svg>
+        </div>
+
+        <div class="social-links">
+          <span>Follow us</span>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                ></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" aria-label="Twitter X">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <section class="light marquee-wrap" aria-hidden="true">
+      <div class="marquee-stage">
+        <div class="mq-row mq-big"><div class="mq-in"></div></div>
+        <div class="mq-row mq-pills"><div class="mq-in"></div></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="light sec about-section-new" id="about">
+      <div class="wrap">
+        <div class="about-header">
+          <div class="ah-left">
+            <span class="ah-tag"><i class="dot"></i> About Us</span>
+            <h2>
+              Crafting <span class="g-text">Digital Experiences</span><br />That
+              Drive Growth
+            </h2>
+          </div>
+          <div class="ah-right">
+            <p>
+              At The Design Spark, we bring together designers, strategists, and
+              makers to craft bold, thoughtful digital experiences made with
+              care and curiosity.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-new-grid">
+          <div class="an-img-side">
+            <img
+              src="assets/images/about.jpg"
+              alt="The Design Spark Team"
+              onerror="this.remove()"
+            />
+            <div class="an-glow"></div>
+          </div>
+
+          <div class="an-content-side">
+            <div class="an-stats">
+              <article class="stat-card big-stat">
+                <div class="stat-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <h3><b class="count" data-to="400">400</b><span>+</span></h3>
+                <p class="stat-label">Happy Clients</p>
+                <div class="stat-badges">
+                  <span>USA</span><span>UK</span><span>UAE</span>
+                  <span class="badge-more">+20 More</span>
+                </div>
+                <a href="#contact" class="btn-solid-dark">
+                  <span>Book a call</span>
+                  <i class="arr">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                  </i>
+                </a>
+              </article>
+
+              <article class="stat-card small-stat">
+                <div class="ss-top">
+                  <span class="featured-badge"
+                    ><i class="dot"></i> Featured</span
+                  >
+                  <span>2024</span>
+                </div>
+                <div class="ss-content">
+                  <h3><b class="count" data-to="230">230</b><span>+</span></h3>
+                  <p>Projects delivered<br />successfully</p>
+                </div>
+                <svg class="ss-spark" viewBox="0 0 240 70" fill="none">
+                  <defs>
+                    <linearGradient id="sparkFill" x1="0" y1="0" x2="0" y2="1">
+                      <stop
+                        offset="0"
+                        stop-color="#d4ff3f"
+                        stop-opacity=".35"
+                      />
+                      <stop offset="1" stop-color="#d4ff3f" stop-opacity="0" />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    class="ss-area"
+                    d="M0 62 C30 58 45 48 70 50 S110 36 135 32 S190 14 240 6 V70 H0Z"
+                    fill="url(#sparkFill)"
+                  />
+                  <path
+                    class="ss-line"
+                    pathLength="1"
+                    d="M0 62 C30 58 45 48 70 50 S110 36 135 32 S190 14 240 6"
+                    stroke="#d4ff3f"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                  />
+                  <circle
+                    class="ss-dot"
+                    cx="240"
+                    cy="6"
+                    r="4.5"
+                    fill="#d4ff3f"
+                  />
+                </svg>
+              </article>
+            </div>
+
+            <div class="an-bottom-text">
+              <p>
+                Based in Jacksonville, our team of creative thinkers, designers,
+                and developers is passionate about crafting impactful digital
+                experiences that help businesses thrive in the competitive
+                online space.
+              </p>
+              <p>
+                With expertise spanning web design, branding, SEO, and digital
+                marketing, we take a tailored approach to every project. Our
+                mission is simple: to create designs that don't just look good
+                but deliver results.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="dark sec wk" id="portfolio">
+      <div class="wk-bg" id="wkBg" aria-hidden="true">
+        <div
+          class="wk-bg-img on"
+          style="
+            background-image: url(&quot;assets/images/portfolio-1.jpg&quot;);
+          "
+        ></div>
+        <div
+          class="wk-bg-img"
+          style="
+            background-image: url(&quot;assets/images/portfolio-2.jpg&quot;);
+          "
+        ></div>
+        <div
+          class="wk-bg-img"
+          style="
+            background-image: url(&quot;assets/images/portfolio-3.jpg&quot;);
+          "
+        ></div>
+        <div
+          class="wk-bg-img"
+          style="
+            background-image: url(&quot;assets/images/portfolio-4.jpg&quot;);
+          "
+        ></div>
+        <div
+          class="wk-bg-img"
+          style="
+            background-image: url(&quot;assets/images/portfolio-5.jpg&quot;);
+          "
+        ></div>
+        <div
+          class="wk-bg-img"
+          style="
+            background-image: url(&quot;assets/images/portfolio-6.jpg&quot;);
+          "
+        ></div>
+        <div
+          class="wk-bg-img"
+          style="
+            background-image: url(&quot;assets/images/portfolio-7.jpg&quot;);
+          "
+        ></div>
+        <div
+          class="wk-bg-img"
+          style="
+            background-image: url(&quot;assets/images/portfolio-8.jpg&quot;);
+          "
+        ></div>
+        <div class="wk-bg-shade"></div>
+      </div>
+      <div class="wrap">
+        <div class="wk-head">
+          <div>
+            <span class="ah-tag"><i class="dot"></i> Our Portfolio</span>
+            <h2>Selected <span class="g-text">work</span></h2>
+          </div>
+          <div class="wk-head-r">
+            <p>
+              Discover our showcase of projects, where creativity meets
+              excellence, delivering impactful results for our clients.
+            </p>
+            <div class="wk-stats">
+              <div><b>500+</b><span>Projects</span></div>
+              <div><b>8</b><span>Industries</span></div>
+              <div><b>98%</b><span>Happy clients</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="wk-filters" id="wkFilters">
+          <span class="wk-pill" id="wkPill"></span
+          ><button class="on" data-f="all">All Work</button
+          ><button data-f="web">Web Design/Dev</button
+          ><button data-f="graphic">Graphic Design</button
+          ><button data-f="app">App Development</button
+          ><button data-f="seo">SEO Services</button
+          ><button data-f="video">Video Editing</button
+          ><button data-f="anim">2D &amp; 3D Animations</button
+          ><button data-f="illus">Illustrations</button>
+        </div>
+
+        <div class="wk-grid" id="wkGrid">
+          <article class="wk-card tall" data-c="web" data-i="0">
+            <div class="wk-media">
+              <img
+                src="assets/images/portfolio-1.jpg"
+                alt="Harbor Dental"
+                loading="lazy"
+              />
+            </div>
+            <div class="wk-top">
+              <span class="wk-num">01</span><span class="wk-year">2025</span>
+            </div>
+            <div class="wk-info">
+              <span class="wk-cat">Web Design/Dev</span>
+              <h3>Harbor Dental</h3>
+              <p>Conversion-first website for a Florida dental clinic.</p>
+            </div>
+          </article>
+          <article class="wk-card tall" data-c="app" data-i="1">
+            <div class="wk-media">
+              <img
+                src="assets/images/portfolio-2.jpg"
+                alt="Wayfinder"
+                loading="lazy"
+              />
+            </div>
+            <div class="wk-top">
+              <span class="wk-num">02</span><span class="wk-year">2025</span>
+            </div>
+            <div class="wk-info">
+              <span class="wk-cat">App Development</span>
+              <h3>Wayfinder</h3>
+              <p>Travel navigation app with real-time routes.</p>
+            </div>
+          </article>
+          <article class="wk-card" data-c="graphic" data-i="2">
+            <div class="wk-media">
+              <img
+                src="assets/images/portfolio-3.jpg"
+                alt="Palmetto Coffee"
+                loading="lazy"
+              />
+            </div>
+            <div class="wk-top">
+              <span class="wk-num">03</span><span class="wk-year">2024</span>
+            </div>
+            <div class="wk-info">
+              <span class="wk-cat">Graphic Design</span>
+              <h3>Palmetto Coffee</h3>
+              <p>Full brand identity and packaging system.</p>
+            </div>
+          </article>
+          <article class="wk-card tall" data-c="anim" data-i="3">
+            <div class="wk-media">
+              <img
+                src="assets/images/portfolio-4.jpg"
+                alt="Orbit Explainer"
+                loading="lazy"
+              />
+            </div>
+            <div class="wk-top">
+              <span class="wk-num">04</span><span class="wk-year">2025</span>
+            </div>
+            <div class="wk-info">
+              <span class="wk-cat">2D &amp; 3D Animations</span>
+              <h3>Orbit Explainer</h3>
+              <p>3D animated explainer for a SaaS launch.</p>
+            </div>
+          </article>
+          <article class="wk-card" data-c="web" data-i="4">
+            <div class="wk-media">
+              <img
+                src="assets/images/portfolio-5.jpg"
+                alt="Bay Street Realty"
+                loading="lazy"
+              />
+            </div>
+            <div class="wk-top">
+              <span class="wk-num">05</span><span class="wk-year">2024</span>
+            </div>
+            <div class="wk-info">
+              <span class="wk-cat">Web Design/Dev</span>
+              <h3>Bay Street Realty</h3>
+              <p>Luxury real estate website with listings.</p>
+            </div>
+          </article>
+          <article class="wk-card tall" data-c="illus" data-i="5">
+            <div class="wk-media">
+              <img
+                src="assets/images/portfolio-6.jpg"
+                alt="Northside Fitness"
+                loading="lazy"
+              />
+            </div>
+            <div class="wk-top">
+              <span class="wk-num">06</span><span class="wk-year">2024</span>
+            </div>
+            <div class="wk-info">
+              <span class="wk-cat">Illustrations</span>
+              <h3>Northside Fitness</h3>
+              <p>Bold poster illustrations for a gym campaign.</p>
+            </div>
+          </article>
+          <article class="wk-card" data-c="seo" data-i="6">
+            <div class="wk-media">
+              <img
+                src="assets/images/portfolio-7.jpg"
+                alt="Summit Legal"
+                loading="lazy"
+              />
+            </div>
+            <div class="wk-top">
+              <span class="wk-num">07</span><span class="wk-year">2025</span>
+            </div>
+            <div class="wk-info">
+              <span class="wk-cat">SEO Services</span>
+              <h3>Summit Legal</h3>
+              <p>SEO strategy that tripled organic traffic.</p>
+            </div>
+          </article>
+          <article class="wk-card tall" data-c="video" data-i="7">
+            <div class="wk-media">
+              <img
+                src="assets/images/portfolio-8.jpg"
+                alt="Velocity Launch"
+                loading="lazy"
+              />
+            </div>
+            <div class="wk-top">
+              <span class="wk-num">08</span><span class="wk-year">2025</span>
+            </div>
+            <div class="wk-info">
+              <span class="wk-cat">Video Editing</span>
+              <h3>Velocity Launch</h3>
+              <p>Cinematic product launch commercial.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="pf-cta">
+          <p>Like what you see? Your project could be our next case study.</p>
+          <a href="#contact" class="pf-cta-btn"
+            ><span>Start a project</span
+            ><i class="arr"
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M7 17 17 7M8 7h9v9" /></svg></i
+          ></a>
+        </div>
+      </div>
+      <div class="wk-cursor" id="wkCursor"><span>View</span></div>
+    </section>
+
+    <!-- Portfolio Lightbox -->
+    <div class="wk-lb" id="wkLb" aria-hidden="true">
+      <button class="wk-lb-x" aria-label="Close">&times;</button>
+      <button class="wk-lb-nav prev" aria-label="Previous">&#8592;</button>
+      <figure>
+        <img id="wkLbImg" alt="" />
+        <figcaption>
+          <span id="wkLbCat"></span>
+          <h3 id="wkLbT"></h3>
+          <p id="wkLbD"></p>
+        </figcaption>
+      </figure>
+      <button class="wk-lb-nav next" aria-label="Next">&#8594;</button>
+    </div>
+
+    <!-- Services -->
+    <section class="light sec svc" id="services">
+      <div class="wrap">
+        <div class="svc-head">
+          <h2 class="svc-title">Services</h2>
+        </div>
+        <div class="svc-cf" id="svcWrap">
+          <div class="svc-stage" id="svcStage"></div>
+          <p class="svc-count">
+            <b id="svcN">01</b> / <span id="svcTot">08</span>
+          </p>
+          <div class="svc-ctl">
+            <button class="svc-btn" id="svcPrev" aria-label="Previous service">
+              &#8592;
+            </button>
+            <div class="svc-dots" id="svcDots"></div>
+            <button
+              class="svc-btn dark-btn"
+              id="svcNext"
+              aria-label="Next service"
+            >
+              &#8594;
+            </button>
+          </div>
+          <p class="svc-hint">Drag &middot; Scroll &middot; Arrows</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages -->
+    <section class="dark sec pk" id="packages">
+      <div class="pf-glow r"></div>
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <span class="ah-tag"><i class="dot"></i> Packages</span>
+            <h2>Clear pricing, <span class="g-text">no surprises</span></h2>
+          </div>
+          <p>
+            Pick the package that fits where your business is today. Every plan
+            includes unlimited revisions and a dedicated project manager.
+          </p>
+        </div>
+        <div class="pk-tabs" id="pkTabs">
+          <button class="pk-tab on" data-g="a">Web Design/Dev</button
+          ><button class="pk-tab" data-g="b">E Commerce &amp; Business</button>
+        </div>
+
+        <div class="pk-set" data-g="a">
+          <article class="pk">
+            <h3>Basic</h3>
+            <span class="pk-sub">Startup website package</span>
+            <div class="pk-price">
+              <sup>$</sup><b class="pc" data-to="249">249</b
+              ><small>/ project</small>
+            </div>
+            <a href="#contact" class="btn-solid-dark"
+              ><span>Get started</span
+              ><i class="arr"
+                ><svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" /></svg></i
+            ></a>
+            <p class="pk-inc">What's included</p>
+            <ul>
+              <li>5-page website</li>
+              <li>Custom layout design</li>
+              <li>Contact / query form</li>
+              <li>3 banner designs, 5 stock photos</li>
+              <li>Free favicon and Google-friendly sitemap</li>
+              <li>Unlimited revisions</li>
+            </ul>
+          </article>
+          <article class="pk pop">
+            <span class="pk-badge">Most popular</span>
+            <h3>Standard</h3>
+            <span class="pk-sub">Suitable for potential startups</span>
+            <div class="pk-price">
+              <sup>$</sup><b class="pc" data-to="699">699</b
+              ><small>/ project</small>
+            </div>
+            <a href="#contact" class="btn-solid-dark"
+              ><span>Get started</span
+              ><i class="arr"
+                ><svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" /></svg></i
+            ></a>
+            <p class="pk-inc">What's included</p>
+            <ul>
+              <li>Complete source files</li>
+              <li>Dedicated project manager</li>
+              <li>100% ownership rights</li>
+              <li>100% satisfaction guarantee</li>
+              <li>100% money-back guarantee</li>
+              <li>Value-added services</li>
+              <li>Mobile responsive for $199 extra</li>
+            </ul>
+          </article>
+          <article class="pk">
+            <h3>Premium</h3>
+            <span class="pk-sub">Suitable for growing businesses</span>
+            <div class="pk-price">
+              <sup>$</sup><b class="pc" data-to="999">999</b
+              ><small>/ project</small>
+            </div>
+            <a href="#contact" class="btn-solid-dark"
+              ><span>Get started</span
+              ><i class="arr"
+                ><svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" /></svg></i
+            ></a>
+            <p class="pk-inc">What's included</p>
+            <ul>
+              <li>Up to 10 unique pages</li>
+              <li>Custom, interactive and dynamic design</li>
+              <li>Custom WordPress or PHP development</li>
+              <li>Interactive sliding banners</li>
+              <li>Up to 10 custom banner designs</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="pk-set" data-g="b" hidden>
+          <article class="pk">
+            <h3>Silver Website</h3>
+            <span class="pk-sub">Up to 20 pages package</span>
+            <div class="pk-price">
+              <sup>$</sup><b class="pc" data-to="1599">1,599</b
+              ><small>/ project</small>
+            </div>
+            <a href="#contact" class="btn-solid-dark"
+              ><span>Get started</span
+              ><i class="arr"
+                ><svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" /></svg></i
+            ></a>
+            <p class="pk-inc">What's included</p>
+            <ul>
+              <li>Up to 20 unique pages</li>
+              <li>Custom, dynamic, high-end design</li>
+              <li>Custom WordPress or PHP development</li>
+              <li>Fully mobile responsive</li>
+              <li>Interactive sliding banners</li>
+              <li>Up to 15 custom banner designs</li>
+            </ul>
+          </article>
+          <article class="pk pop">
+            <span class="pk-badge">Best value</span>
+            <h3>Business Website</h3>
+            <span class="pk-sub">25 pages package</span>
+            <div class="pk-price">
+              <sup>$</sup><b class="pc" data-to="2499">2,499</b
+              ><small>/ project</small>
+            </div>
+            <a href="#contact" class="btn-solid-dark"
+              ><span>Get started</span
+              ><i class="arr"
+                ><svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" /></svg></i
+            ></a>
+            <p class="pk-inc">What's included</p>
+            <ul>
+              <li>25 pages</li>
+              <li>Custom, interactive, dynamic and high-end design</li>
+              <li>Customized WordPress or PHP development</li>
+              <li>Fully mobile responsive</li>
+              <li>Interactive sliding banners</li>
+              <li>Up to 15 custom banner designs</li>
+            </ul>
+          </article>
+          <article class="pk">
+            <h3>Platinum Website</h3>
+            <span class="pk-sub">Unlimited pages package</span>
+            <div class="pk-price">
+              <sup>$</sup><b class="pc" data-to="4499">4,499</b
+              ><small>/ project</small>
+            </div>
+            <a href="#contact" class="btn-solid-dark"
+              ><span>Get started</span
+              ><i class="arr"
+                ><svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" /></svg></i
+            ></a>
+            <p class="pk-inc">What's included</p>
+            <ul>
+              <li>Unlimited pages</li>
+              <li>30 to 60 second explainer video</li>
+              <li>Custom, interactive, dynamic and high-end design</li>
+              <li>Customized WordPress or PHP development</li>
+              <li>Fully mobile responsive</li>
+            </ul>
+          </article>
+        </div>
+        <div class="pk-guarantee">
+          <div class="pk-g-item">
+            <i
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg
+            ></i>
+            <div><b>Money-back</b><span>100% guarantee</span></div>
+          </div>
+          <div class="pk-g-item">
+            <i
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 12a9 9 0 1 1-3-6.7L21 8" />
+                <path d="M21 3v5h-5" /></svg
+            ></i>
+            <div><b>Revisions</b><span>Unlimited, always</span></div>
+          </div>
+          <div class="pk-g-item">
+            <i
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="8" r="4" />
+                <path d="M4 21a8 8 0 0 1 16 0" /></svg
+            ></i>
+            <div><b>Project manager</b><span>Dedicated to you</span></div>
+          </div>
+          <div class="pk-g-item">
+            <i
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M20 6 9 17l-5-5" /></svg
+            ></i>
+            <div><b>Full ownership</b><span>You own 100% of it</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="light sec cta" id="contact">
+      <div class="wrap">
+        <div class="cta-panel">
+          <div class="cta-left">
+            <span class="cta-kicker">Start a project</span>
+            <h2>Let's make your next launch your best one.</h2>
+            <p>
+              Share a few details about your project. A senior strategist will
+              get back to you within one business day with a scoped plan and a
+              fixed quote.
+            </p>
+
+            <ul class="cta-steps">
+              <li>
+                <b>01</b>
+                <div>
+                  <h4>Discovery call</h4>
+                  <span>30 minutes to understand your goals and audience.</span>
+                </div>
+              </li>
+              <li>
+                <b>02</b>
+                <div>
+                  <h4>Proposal &amp; quote</h4>
+                  <span
+                    >A clear scope, timeline and fixed price. No
+                    surprises.</span
+                  >
+                </div>
+              </li>
+              <li>
+                <b>03</b>
+                <div>
+                  <h4>Design &amp; build</h4>
+                  <span>Weekly check-ins until launch day and beyond.</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="cta-contact">
+              <a href="mailto:benjamin@thedesignspark.com"
+                ><small>Email</small>benjamin@thedesignspark.com</a
+              >
+              <a href="tel:+13214051612"><small>Phone</small>(321) 405-1612</a>
+            </div>
+          </div>
+
+          <form
+            class="cta-form"
+            action="mailto:benjamin@thedesignspark.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <div class="cta-form-head">
+              <h3>Tell us about your project</h3>
+              <span>Takes less than a minute</span>
+            </div>
+            <div class="cf-row">
+              <label
+                ><span>Full name</span
+                ><input
+                  type="text"
+                  name="name"
+                  placeholder="John Carter"
+                  required
+              /></label>
+              <label
+                ><span>Email</span
+                ><input
+                  type="email"
+                  name="email"
+                  placeholder="john@company.com"
+                  required
+              /></label>
+            </div>
+            <label
+              ><span>Service</span>
+              <select name="service">
+                <option>Website design &amp; development</option>
+                <option>E-commerce store</option>
+                <option>Branding &amp; identity</option>
+                <option>SEO &amp; digital marketing</option>
+                <option>Something else</option>
+              </select>
+            </label>
+            <label
+              ><span>Project details</span
+              ><textarea
+                name="message"
+                rows="3"
+                placeholder="A few words about your goals, timeline and anything else we should know."
+              ></textarea>
+            </label>
+            <button type="submit" class="cf-submit">
+              Send inquiry
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
+            <p class="cf-note">
+              Trusted by 400+ businesses · Clutch verified · Top 10 design
+              agency
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="dark ft">
+      <div class="ft-line"></div>
+      <div class="wrap">
+        <div class="ft-grid">
+          <div class="ft-brand">
+            <a href="#home" class="ft-logo">
+              <img
+                src="assets/images/logo.png"
+                alt="The Design Spark"
+                onerror="this.style.display = 'none'"
+              />
+            </a>
+            <p>
+              We create innovative websites and digital solutions tailored to
+              your business needs. Based in Jacksonville, Florida, committed to
+              driving your success through creativity and strategy.
+            </p>
+            <div class="ft-social">
+              <a href="#" aria-label="Facebook"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  /></svg
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg
+              ></a>
+              <a href="#" aria-label="LinkedIn"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"
+                  />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" /></svg
+              ></a>
+            </div>
+          </div>
+          <div class="ft-col">
+            <h4>Quick Links</h4>
+            <a href="#home">Home</a>
+            <a href="#about">About us</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#services">Services</a>
+            <a href="#packages">Packages</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="ft-col">
+            <h4>Services</h4>
+            <a href="#services">Web Design &amp; Development</a>
+            <a href="#services">Graphic Design</a>
+            <a href="#services">App Development</a>
+            <a href="#services">SEO Services</a>
+            <a href="#services">Video Editing</a>
+            <a href="#services">2D &amp; 3D Animation</a>
+          </div>
+          <div class="ft-col ft-news">
+            <h4>Stay Connected</h4>
+            <p>Subscribe to get the latest offers, design tips and news.</p>
+            <form class="ft-form" id="ftForm">
+              <input
+                type="email"
+                placeholder="Email"
+                aria-label="Email"
+                required
+              />
+              <button type="submit" aria-label="Subscribe">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </form>
+            <span class="ft-msg" id="ftMsg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="ft-base">
+        <span
+          >Copyright &copy; 2026 The Design Spark. All Rights Reserved.</span
+        >
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
